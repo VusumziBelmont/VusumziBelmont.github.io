@@ -1,0 +1,29 @@
+.short-header{
+  height: 50vh;
+
+}
+
+.full-header{
+  height: 100vh;
+}
+
+.wrapper{
+  *{
+    margin: 24px;
+  }
+  .header-button{
+    display: inline-block;
+    background-color: $background !important;
+    color: $dark-text !important;
+    border-color: $background !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    * {margin: 0;}
+    &:hover{
+      background-color: darken($accent, 12%) !important;
+      color: $light-text !important;
+      border-color: $accent !important;
+    }
+  }
+}

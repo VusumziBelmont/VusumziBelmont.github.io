@@ -1,0 +1,32 @@
+.lights-out{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  background-color: transparentize(#333, 0.6);
+  @extend %flex-center;
+  .spinner{
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    position: relative;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    @extend %flex-center;
+    &:after, &:before{
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: 4px solid transparent;
+      border-bottom: 4px solid $accent;
+      border-top: 4px solid $accent;
+      animation: spin 2s infinite linear;
+    }
+  }
+}

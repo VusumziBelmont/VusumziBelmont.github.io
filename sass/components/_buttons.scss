@@ -1,0 +1,8 @@
+.btn-primary{
+    border-radius: 8px !important;
+    background-color: $accent !important;
+    border: 1px solid $accent !important;
+    &:hover{
+        background-color: darken($accent, 12%) !important;
+    }
+}

@@ -1,0 +1,74 @@
+#about-me{
+    padding-top: 110px!important;
+    min-height: 50vh;
+}
+
+#skills-bucket{
+    .row{
+        position: relative;
+        height: 100%;
+        #tecs-vault{
+            padding: 0 12px 0 12px;
+            height: auto;
+            .article-title{
+                height: auto;
+            }
+            .article-body{
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                .icon-item{
+                    padding: 12px;
+                    font-size: 40px;
+                }
+            }
+        }
+        .left-control, .right-control{
+            width: 150px;
+            position:absolute;
+            height:100%;
+            opacity: 0.1;
+            transition: all 300ms ease-in-out;
+        }
+        .left-control{
+            background: rgba(77,77,77,1);
+            background: -moz-linear-gradient(left, rgba(77,77,77,1) 58%, rgba(77,77,77,0.64) 73%, rgba(255,255,255,0) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(58%, rgba(77,77,77,1)), color-stop(73%, rgba(77,77,77,0.64)), color-stop(100%, rgba(255,255,255,0)));
+            background: -webkit-linear-gradient(left, rgba(77,77,77,1) 58%, rgba(77,77,77,0.64) 73%, rgba(255,255,255,0) 100%);
+            background: -o-linear-gradient(left, rgba(77,77,77,1) 58%, rgba(77,77,77,0.64) 73%, rgba(255,255,255,0) 100%);
+            background: -ms-linear-gradient(left, rgba(77,77,77,1) 58%, rgba(77,77,77,0.64) 73%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(to right, rgba(77,77,77,1) 58%, rgba(77,77,77,0.64) 73%, rgba(255,255,255,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#ffffff', GradientType=1 );
+            transform: translateX(-20px);
+            left:0%;
+            &:hover{
+                opacity: 0.7;
+                transform: translateX(0px);
+            }
+        }
+        .right-control{
+            background: rgba(255,255,255,0);
+            background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(77,77,77,0.64) 27%, rgba(77,77,77,1) 42%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(27%, rgba(77,77,77,0.64)), color-stop(42%, rgba(77,77,77,1)));
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(77,77,77,0.64) 27%, rgba(77,77,77,1) 42%);
+            background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(77,77,77,0.64) 27%, rgba(77,77,77,1) 42%);
+            background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(77,77,77,0.64) 27%, rgba(77,77,77,1) 42%);
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(77,77,77,0.64) 27%, rgba(77,77,77,1) 42%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4d4d4d', GradientType=1 );
+            transform: translateX(20px);
+            right:0%;
+            &:hover{
+                opacity: 0.7;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+.game-wrapper{
+    padding: 20px;
+    #canvas-wrapper{
+        width: 93vw !important;
+        height: 100px;
+    }
+}

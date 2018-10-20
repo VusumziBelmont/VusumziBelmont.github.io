@@ -1,0 +1,156 @@
+[
+    {
+        "name": "HTML",
+        "level": 90,
+        "icon": "icon-html5",
+        "categories": "front",
+        "isMainSkill": true
+    },
+    {
+        "name": "JavaScript",
+        "level": 87,
+        "icon": "icon-javascript-alt",
+        "categories": "front",
+        "isMainSkill": true
+    },
+    {
+        "name": "CSS3",
+        "level": 95,
+        "icon": "icon-css3-alt",
+        "categories": "front",
+        "isMainSkill": true
+    },
+    {
+        "name": "Angular",
+        "level": 76,
+        "icon": "icon-angular",
+        "categories": "front",
+        "isMainSkill": true
+    },
+    {
+        "name": "Node.js",
+        "level": 70,
+        "icon": "icon-nodejs",
+        "categories": "back",
+        "isMainSkill": true
+    },
+    {
+        "name": "MongoDB",
+        "level": 65,
+        "icon": "icon-mongodb",
+        "categories": "db",
+        "isMainSkill": true
+    },
+    {
+        "name": "Java EE",
+        "level": 65,
+        "icon": "icon-java-bold",
+        "categories": "back",
+        "isMainSkill": true
+    },
+    {
+        "name": "Sass",
+        "level": 90,
+        "icon": "icon-sass",
+        "categories": "front",
+        "isMainSkill": false
+    },
+    {
+        "name": "Apache",
+        "level": 50,
+        "icon": "icon-apache",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "Maven",
+        "level": 60,
+        "icon": "icon-maven",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "Wordpress",
+        "level": 90,
+        "icon": "icon-wordpress",
+        "categories": "front",
+        "isMainSkill": false
+    },
+    {
+        "name": "SQL",
+        "level": 60,
+        "icon": "icon-database-alt2",
+        "categories": "db",
+        "isMainSkill": false
+    },
+    {
+        "name": "mySQL",
+        "level": 60,
+        "icon": "icon-mysql",
+        "categories": "db",
+        "isMainSkill": false
+    },
+    {
+        "name": "aws",
+        "level": 50,
+        "icon": "fab fa-aws",
+        "categories": "tecs",
+        "isMainSkill": false
+    },
+    {
+        "name": "Google code",
+        "level": 63,
+        "icon": "icon-google-code",
+        "categories": "tecs",
+        "isMainSkill": false
+    },
+    {
+        "name": "jQuery",
+        "level": 81,
+        "icon": "icon-jquery",
+        "categories": "front",
+        "isMainSkill": false
+    },
+    {
+        "name": "Spring",
+        "level": 63,
+        "icon": "icon-spring",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "C++",
+        "level": 54,
+        "icon": "icon-cplusplus",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "PHP",
+        "level": 74,
+        "icon": "icon-php",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "Python",
+        "level": 71,
+        "icon": "icon-python",
+        "categories": "back",
+        "isMainSkill": false
+    },
+    {
+        "name": "graph js",
+        "level": 81,
+        "icon": "icon-line-graph",
+        "categories": "tecs",
+        "isMainSkill": false
+    },
+    {
+        "name": "Android",
+        "level": 72,
+        "icon": "fab fa-android",
+        "categories": "tecs",
+        "isMainSkill": false
+    }
+]

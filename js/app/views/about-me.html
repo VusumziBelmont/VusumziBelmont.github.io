@@ -1,0 +1,92 @@
+<!-- controller as aboutCtrl -->
+<div class="container-fluid block centered" id="about-me">
+    <div class="article centered">
+        <div class="row centered">
+            <h1>Sobre mi</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <br>
+                <p>Soy desarrollador fullstack enfocado en el desarrollo y diseño de UX/UI, tengo <a href="">proyectos</a> de software profesionales y personales con un gran número de lenguajes de programación, mi pasion es programar, aprender y enseñar cosas y <a href="#tecs">tecnologías</a> nuevas.</p>
+                <p>Tengo experiencia enseñando programación desde lo más básico hasta los conceptos mas avanzados, tambien experiencia profecional en el desarrollo y manteniemnto de <a href="">aplicaciones</a> empresariales, con <a href="">corporaciones, empresas y negocios</a> nacionales e internacionales.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid block dark-block centered" id="tecs">
+    <div class="article">
+        <div class="row centered">
+            <h1>Soy experto en estas tecnologías</h1>
+        </div>
+        <br>
+        <div class="row">
+            
+            <div class="col-sm-4">
+
+                <!-- iterator for skill level -->
+                <ul class="list-group list-group">
+
+                    <li class="list-group-item" ng-repeat="lang in aboutCtrl.primaryLangs">
+                        <i class="{{lang.icon}}"></i> {{lang.name}}
+                        <div class="progress">
+                            <div class="progress-bar" style="width: {{lang.level}}%" role="progressbar" aria-valuenow="{{lang.level}}" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                   
+                  </ul>
+
+            </div>
+
+            <div class="col-sm-4">
+
+            </div>
+
+            <div class="col-sm-4" id="skills-bucket">
+                <div class="row">
+                    <div class="container-fluid" id="tecs-vault">
+                        <div class="row article-title centered">
+                            <h3>{{aboutCtrl.categories[aboutCtrl.categoryIndx].name}}</h3>
+                        </div>
+                        <div class="row article-body centered" >
+                            <div class="icon-item centered column" ng-repeat="item in aboutCtrl.categories[aboutCtrl.categoryIndx].tecs">
+                                <i class="{{item.icon}}"></i>
+                                <h5>{{item.name}}</h5>
+                            </div>
+                            
+                                
+                        </div>
+                    </div>
+                    <div class="centered left-control" ng-click="aboutCtrl.prevCat()">
+                        <h1><i class="fas fa-angle-left"></i></h1>
+                    </div>
+                    <div class="centered right-control" ng-click="aboutCtrl.nextCat()">
+                        <h1><i class="fas fa-angle-right"></i></h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row game-wrapper">
+
+            <div id="canvas-wrapper">
+                <canvas id="game-prev">
+                    --this browser is not compatible with canvas!--
+                </canvas>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid block" id="about-me">
+        <div class="article">
+            <div class="row">
+                <div class="col-sm-12 centered">
+                    <br>
+                    <blockquote class="blockquote" cite="https://code.org/"><p>"when you are programming you are teaching possibly the stupidest thing in the entire universe, a computer, how to do something"</p><div class="author">-Gabe Newell</div></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>

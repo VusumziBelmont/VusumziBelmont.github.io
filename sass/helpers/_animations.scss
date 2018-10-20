@@ -1,0 +1,144 @@
+//infinite-pulse
+@keyframes infinite-pulse {
+  0%{
+    transform: scale(0.1);
+  }
+  10%{
+    transform: scale(10);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+%infinite-pulse{
+  &::before{
+    content: "";
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    animation: infinite-pulse 5s infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute !important;
+  }
+}
+
+//single-pulse
+@keyframes single-pulse {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+%single-pulse{
+  &::before{
+    content: "";
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    animation: single-pulse 300ms 1;
+    animation-timing-function: ease-in-out;
+    position: absolute !important;
+  }
+}
+
+// flip 180
+@keyframes flip180 {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+.flip180-trigger:hover .flip180-target{
+  animation: flip180 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+//fly up
+@keyframes fly-up {
+  0%{
+    transform: translateY(0);
+    opacity: 100;
+  }
+  30%{
+    transform: translateY(20px);
+    opacity: 100;
+  }
+  100%{
+    transform: translateY((-1)*$view-height);
+    opacity: 0;
+  }
+}
+
+.fly-up{
+  position: fixed;
+  animation: fly-up 500ms 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+//roll up 50
+@keyframes roll-up-50 {
+  0%{
+    max-height: 100vh;
+  }
+  30%{
+    max-height: 80vh;
+  }
+
+  50%{
+    max-height: 50vh;
+  }
+
+  100%{
+    max-height: 50vh;
+  }
+}
+
+.roll-up-50{
+  animation: roll-up-50 300ms 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+//disapear
+@keyframes disapear{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.disapear{
+  animation: disapear 300ms 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+//spin
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+

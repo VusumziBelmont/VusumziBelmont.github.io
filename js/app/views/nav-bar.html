@@ -1,0 +1,27 @@
+<!-- Controller as navBarCtrl -->
+<nav class="navbar navbar-expand-lg navbar-dark" ng-class="{fixedNav : isFixed}" ng-init="navBarCtrl.recursive(navBarCtrl.scrollWatcher,200)" id="navBar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-centerd" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item active logo">
+                <a class="nav-link" href="#"> <div class="logo-bg"><img src="img/logofinal.png" alt=""></div> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>

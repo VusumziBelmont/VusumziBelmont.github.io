@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  body, html{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .header{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    z-index: 9;
+  }
+  
+  .banner-img{
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('../img/pexels-photoh.jpg');
+    //background: no-repeat center cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    .banner-logo{
+      padding-top: 18px;
+      opacity: 0.5;
+    }
+  }
+  
+  .banner-img>.main-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 85%;
+  }
+  
+  .banner-img>.main-text>h1{
+    -webkit-text-shadow: -1px 2px 7px rgba(0,0,0,0.9);
+    -moz-text-shadow: -1px 2px 7px rgba(0,0,0,0.9);
+    text-shadow: -1px 2px 7px rgba(0,0,0,0.9);
+    font-size: 4em;
+    font-weight: lighter;
+  }
+  
+  .banner-next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .banner-img>.main-text>h1{
+      font-size: 2em;
+    }
+    .banner-img>.banner-next>.banner-next-button>h3{
+      font-size: 1em;
+    }
+  }
+  
+  .next-banner-wrapper{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+  }
+  
+  
+  .ripple-wrapper{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    @extend %flex-center;
+    @extend %infinite-pulse;
+    cursor: pointer;
+    .arrow-icon{
+      text-align: center;
+      width: auto;
+      position: absolute !important;
+    }
+  }
+  
+  .clicked-icon{
+    @extend %single-pulse;
+  }
+  
