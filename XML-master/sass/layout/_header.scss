@@ -1,0 +1,47 @@
+header {
+  background-color: $primary-color;
+  color: $text-color;
+  height: 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  @include box-shadow(0, 4px, 22px, -3px, rgba(0,0,0,0.75));
+  .logo {
+    border-left: 1px solid #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 32px;
+    height: inherit;
+    vertical-align: middle;
+    width: 170px;
+    h2{
+      display: inline;
+      margin-left: 20px;
+    }
+    .logo-img{
+      display: inline;
+      width: 40px;
+    }
+
+  }
+  .button-cont {
+    padding: 0 32px;
+    vertical-align: middle;
+    .button-dark {
+      @extend %button-dark;
+      margin-right: 10px;
+    }
+
+    .button-dark-2 {
+      @extend %button-dark-2;
+    }
+  }
+}

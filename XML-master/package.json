@@ -1,0 +1,12 @@
+{
+  "name": "your-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Vusumzi Belmont",
+  "devDependencies": {
+    "electron-packager": "^8.3.0"
+  }
+}

@@ -1,0 +1,27 @@
+<ellipse
+    x="can.centerX"
+    y="can.centerY"
+    width="300"
+    height="300"
+    background-color="'yellow'"/>
+
+<ellipse
+    x="can.centerX-45"
+    y="can.centerY-57"
+    width="40"
+    height="40"
+    background-color="46, 46, 41"/>
+
+<ellipse
+    x="can.centerX+102"
+    y="can.centerY-64"
+    width="40"
+    height="40"
+    background-color="46, 46, 41"/>
+
+<ellipse
+    x="can.centerX+55"
+    y="can.centerY+32"
+    width="120"
+    height="136"
+    background-color="#ff4141"/>

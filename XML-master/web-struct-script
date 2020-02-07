@@ -1,0 +1,68 @@
+#!/bin/bash
+# My first script
+
+mkdir ./js
+mkdir ./res
+mkdir ./css
+mkdir ./sass
+
+> .sass-lint.yml
+> index.html
+echo "<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=\"utf-8\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"autor\" content=\"Vusumzi Belmont\">
+    <meta name=\"language\" content=\"Spanish\">
+    <title>new title</title>
+    <!--loacal styles and scripts-->
+    <link rel=\"stylesheet\" href=\"css/main.css\" media=\"screen\">
+    <script type=\"text/javascript\" src=\"js/main.js\"></script>
+  </head>
+  <body>
+
+  </body>
+</html>" >> index.html
+
+> ./js/main.js
+> ./css/main.css
+> ./sass/main.scss
+echo "@import './helpers/imports';" >> ./sass/main.scss
+
+cd ./sass
+
+mkdir ./helpers
+mkdir ./components
+mkdir ./layout
+mkdir ./pages
+
+> ./helpers/_extenders.scss
+> ./helpers/_functions.scss
+> ./helpers/_mixins.scss
+> ./helpers/_variables.scss
+> ./helpers/_imports.scss
+echo "@import 'variables';
+@import 'mixins';
+@import 'functions';
+@import 'extenders';
+@import '../components/buttons';
+@import '../components/cover';
+@import '../components/forms';
+@import '../components/menu';
+@import '../layout/grid';
+@import '../layout/header';
+@import '../layout/images';
+@import '../layout/footer';
+@import '../pages/home';" >> ./helpers/_imports.scss
+
+> ./components/_buttons.scss
+> ./components/_cover.scss
+> ./components/_forms.scss
+> ./components/_menu.scss
+
+> ./layout/_footer.scss
+> ./layout/_grid.scss
+> ./layout/_header.scss
+> ./layout/_images.scss

@@ -1,0 +1,58 @@
+
+body{
+  color: lighten($primary-text-color, 30%);
+  min-width: 900px;
+  .prog-title{
+    text-align: center;
+    width: 100%;
+    margin-top: 95px;
+
+
+  }
+  .view {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 1003px;
+    min-width: 1003px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid $divider-color;
+    @include border-radius(9px);
+    .editor-cont{
+      width: $content-width/2;
+      #editor {
+        width: 600px;
+        @include border-radius-all(9px, 0, 0, 0);
+        height: 89%;
+      }
+      #myCanvas{
+        @include border-radius-right(9px);
+        position: relative;
+      }
+      .bottom-bar{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 600px;
+        vertical-align: middle;
+        height: 11%;
+        border-top: 1px solid $divider-color;
+
+        button{
+          @extend %button-accent;
+          &:first-child {
+            display: inline;
+            margin: auto;
+            margin-right: 12px;
+          }
+        }
+        .button-light{
+          @extend %button-accent-light;
+        }
+      }
+    }
+  }
+}

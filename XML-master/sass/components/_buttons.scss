@@ -1,0 +1,66 @@
+%button {
+  border: 1px solid $text-color;
+  @include border-radius(9px);
+  padding: 8px 10px;
+  width: 100px;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
+  &:active {
+    outline: none;
+    position: relative;
+    top: 1.5px;
+    @include box-shadow-in(0, 4px, 22px, -3px, rgba(0,0,0,0.75));
+  }
+}
+
+button%button-dark {
+  @extend %button;
+  color: $text-color;
+  background-color: transparent;
+  &:hover {
+    background-color: darken( $primary-color, 10% );
+  }
+}
+
+button%button-dark-2 {
+  @extend %button;
+  color: $dark-primary-color;
+  background-color: $text-color;
+  border-color: $dark-primary-color;
+  &:hover {
+    background-color: darken( $text-color, 10% );
+  }
+}
+
+button%button-accent {
+  @extend %button;
+  color: $text-color;
+  background-color: $accent-color;
+  &:hover {
+    background-color: darken( $accent-color, 10% );
+  }
+}
+
+button%button-accent-light {
+  @extend %button;
+  color: $accent-color;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  &:hover {
+    background-color: darken( $accent-color, 10% );
+  }
+}
+
+.button-accent{
+  @extend %button-accent;
+  &:first-child {
+    display: inline;
+    margin: auto;
+    margin-right: 12px;
+  }
+}
+.button-accent-light{
+  @extend %button-accent-light;
+}

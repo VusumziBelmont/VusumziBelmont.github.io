@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  min-width: 900px; }
+
+header .button-cont button.button-dark, header .button-cont button.button-dark-2, button.button-accent, body .view .editor-cont .bottom-bar button, button.button-accent-light, body .view .editor-cont .bottom-bar button.button-light {
+  border: 1px solid #fff;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  border-radius: 9px;
+  padding: 8px 10px;
+  width: 100px;
+  cursor: pointer; }
+  header .button-cont button.button-dark:focus, header .button-cont button.button-dark-2:focus, button.button-accent:focus, body .view .editor-cont .bottom-bar button:focus, button.button-accent-light:focus {
+    outline: none; }
+  header .button-cont button.button-dark:active, header .button-cont button.button-dark-2:active, button.button-accent:active, body .view .editor-cont .bottom-bar button:active, button.button-accent-light:active {
+    outline: none;
+    position: relative;
+    top: 1.5px;
+    -webkit-box-shadow: inset 0 4px 22px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0 4px 22px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0 4px 22px -3px rgba(0, 0, 0, 0.75); }
+
+header .button-cont button.button-dark {
+  color: #fff;
+  background-color: transparent; }
+  header .button-cont button.button-dark:hover {
+    background-color: #00635a; }
+
+header .button-cont button.button-dark-2 {
+  color: #00796b;
+  background-color: #fff;
+  border-color: #00796b; }
+  header .button-cont button.button-dark-2:hover {
+    background-color: #e6e6e6; }
+
+button.button-accent, body .view .editor-cont .bottom-bar button {
+  color: #fff;
+  background-color: #ff9800; }
+  button.button-accent:hover, body .view .editor-cont .bottom-bar button:hover {
+    background-color: #cc7a00; }
+
+button.button-accent-light, body .view .editor-cont .bottom-bar button.button-light {
+  color: #ff9800;
+  background-color: transparent;
+  border: 1px solid #ff9800; }
+  button.button-accent-light:hover, body .view .editor-cont .bottom-bar button.button-light:hover {
+    background-color: #cc7a00; }
+
+.button-accent:first-child {
+  display: inline;
+  margin: auto;
+  margin-right: 12px; }
+
+.doc-article {
+  width: 700px;
+  height: 480px;
+  display: block;
+  margin: 23px auto;
+  margin-top: 60px; }
+  .doc-article p {
+    font-size: 0.8em; }
+  .doc-article .menu-tabs {
+    display: block;
+    margin: auto;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #c2c2c2; }
+    .doc-article .menu-tabs .tab {
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 2px;
+      font-size: 1.2em;
+      padding: 5px;
+      text-align: center;
+      width: 200px;
+      border-bottom: 3px solid #009688; }
+
+.row {
+  padding: 0px 35px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  .row .col {
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 12px;
+    margin: 8px; }
+    .row .col .card xmp {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.8em; }
+    .row .col .card button {
+      display: block;
+      margin: auto;
+      padding: 2px 2px;
+      border-radius: 4px; }
+
+header {
+  background-color: #009688;
+  color: #fff;
+  height: 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  -webkit-box-shadow: 0 4px 22px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 22px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 22px -3px rgba(0, 0, 0, 0.75); }
+  header .logo {
+    border-left: 1px solid #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 32px;
+    height: inherit;
+    vertical-align: middle;
+    width: 170px; }
+    header .logo h2 {
+      display: inline;
+      margin-left: 20px; }
+    header .logo .logo-img {
+      display: inline;
+      width: 40px; }
+  header .button-cont {
+    padding: 0 32px;
+    vertical-align: middle; }
+    header .button-cont .button-dark {
+      margin-right: 10px; }
+
+.doc-resource {
+  width: 100px;
+  float: right; }
+
+body {
+  color: #6e6e6e;
+  min-width: 900px; }
+  body .prog-title {
+    text-align: center;
+    width: 100%;
+    margin-top: 95px; }
+  body .view {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 1003px;
+    min-width: 1003px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #bdbdbd;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px; }
+    body .view .editor-cont {
+      width: 45vw; }
+      body .view .editor-cont #editor {
+        width: 600px;
+        border-radius: 9px 0 0 0;
+        -moz-border-radius: 9px 0 0 0;
+        -ms-border-radius: 9px 0 0 0;
+        -webkit-border-radius: 9px 0 0 0;
+        height: 89%; }
+      body .view .editor-cont #myCanvas {
+        border-radius: 0px 9px 9px 0px;
+        -moz-border-radius: 0px 9px 9px 0px;
+        -ms-border-radius: 0px 9px 9px 0px;
+        -webkit-border-radius: 0px 9px 9px 0px;
+        position: relative; }
+      body .view .editor-cont .bottom-bar {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 600px;
+        vertical-align: middle;
+        height: 11%;
+        border-top: 1px solid #bdbdbd; }
+        body .view .editor-cont .bottom-bar button:first-child {
+          display: inline;
+          margin: auto;
+          margin-right: 12px; }
+
+/*# sourceMappingURL=main.css.map */

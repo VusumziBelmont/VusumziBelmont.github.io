@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="autor" content="Vusumzi Belmont">
+    <meta name="language" content="Spanish">
+    <title>XML</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js"></script>
+    <script src="https://use.fontawesome.com/3a36ec92ee.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.min.js"></script>
+
+    <!--loacal styles and scripts-->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <script type="text/javascript" src="js/head.js"></script>
+    <script type="text/javascript" src="js/stack.js"></script>
+    <script type="text/javascript" src="js/CanvasHead.js"></script>
+    <script id="main-script" type="text/javascript" src="js/main.js"></script>
+    <!--local ace edotor-->
+    <script src="js/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body onload="stack()">
+    <header>
+      <div class="button-cont">
+        <button type="button" name="undo" id="undo" class="button-dark"><i class="fa fa-undo" aria-hidden="true"></i>
+Deshacer</button>
+        <button type="button" name="redo" id="redo" class="button-dark-2">Rehacer <i class="fa fa-repeat" aria-hidden="true"></i></button>
+      </div>
+      <div class="logo">
+        <img src="resource/logo.png" alt="" class="logo-img"/>
+        <h2>XML View</h2>
+      </div>
+    </header>
+
+    <div class="prog-title">
+      <h2>Nuevo programa en XML.</h2>
+    </div>
+
+    <div class="view">
+      <!-- editor -->
+      <div class="editor-cont">
+        <div id="editor">
+
+        </div>
+        <script type="text/javascript" src="js/editorConfig.js"></script>
+        <div class="bottom-bar">
+          <button type="button" name="down" class="button-light">Descargar</button>
+          <button type="button" name="run" class="button-accent">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-article">
+      <div class="menu-tabs">
+        <div class="tab">
+          Documentación
+        </div>
+      </div>
+
+      <h4>Procesando figuras con XML</h4>
+      <p>Con la siguiente documentación podras crear figuras y cambiar colores dentro del programa</p>
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            Rectangulos
+            <img src="resource/rect.png" alt="" class="doc-resource">
+<xmp>
+<rect
+  x="100"
+  y="130"
+  width="200"
+  height="130"
+  background-color="#009688"/>
+
+</xmp>
+          </div>
+          <div class="card">
+            Colores
+            <p>puedes seleccionar un color al dar clic a la caja de texto, una vez selecionado pordras copiar el código hexadecimal del color.</p>
+            <input class="jscolor {hash:true}">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            Elipses
+            <img src="resource/ellipse.png" alt="" class="doc-resource">
+<xmp>
+<ellipse
+  x="200"
+  y="200"
+  width="150"
+  height="100"
+  background-color="#009688"/>
+
+</xmp>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

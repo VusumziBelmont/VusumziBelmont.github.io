@@ -1,0 +1,57 @@
+.doc-article{
+  width: 700px;
+  height: 480px;
+  display: block;
+  margin: 23px auto;
+  margin-top: 60px;
+  p{
+    font-size: 0.8em;
+  }
+  .menu-tabs{
+    display: block;
+    margin: auto;
+    margin-bottom: 11px;
+    border-bottom: 1px solid lighten($secondary-text-color,30%);
+    .tab{
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 2px;
+      font-size: 1.2em;
+      padding: 5px;
+      text-align: center;
+      width: 200px;
+      border-bottom: 3px solid $primary-color;
+    }
+  }
+}
+
+.row{
+  padding: 0px 35px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  .col{
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 12px;
+    margin: 8px;
+    .card{
+      xmp{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 0.8em;
+      }
+      button{
+        display: block;
+        margin: auto;
+        padding: 2px 2px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
