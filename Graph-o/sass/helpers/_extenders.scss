@@ -1,0 +1,12 @@
+.close-i{
+  position: absolute;
+  right: 0px;
+  width: 16px;
+  *{
+    color: lighten($text, 30);
+    &:hover{
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+}

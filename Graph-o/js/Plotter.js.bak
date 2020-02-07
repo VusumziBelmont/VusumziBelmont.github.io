@@ -1,0 +1,106 @@
+var Plotter = function(can, color, form){
+  var canvas = new CanvasHead(can);
+
+  this.Draw=function(){};
+  this.formula;
+  this.steps;
+  this.scale;
+  this.x;
+
+
+(function(){
+    this.x=0;
+    this.steps=0.01;
+    this.scale=globals.scale;
+    //this.formula=form;
+    console.log("presition: "+this.steps);
+
+  })();
+
+  this.setFormula = function(formu){
+    this.formula = formu;
+  };
+
+  this.Plotter=function(){
+    this.setFormula(form);
+    console.log("formula set: "+this.formula);
+  };
+
+  this.Plotter();
+
+
+  this.getFormula = function(){
+    //console.log(this.formula);
+    return this.formula;
+  };
+
+
+  this.anim = function(){
+    this.Draw();
+    //console.log("plotting: "+this.formula);
+    //setTimeout(function(){
+      window.requestAnimationFrame(this.anim);
+    //},1000/fps);
+
+  };
+
+  function funct(formu, x,t){
+    return eval(formu)*(-1);
+  };
+
+
+  this.fastPlot=function(x){
+    var x1=canvas.centerW+x*this.scale, y1=canvas.centerH+funct(this.formula,x)*this.scale, x2=canvas.centerW+(x+this.steps)*this.scale, y2 = canvas.centerH+funct(this.formula,(x+this.steps))*this.scale;
+    canvas.fill('rgba(33,6,243,0.06)');
+    canvas.stroke('rgba(33,6,243,0.06)');
+    canvas.strokeWeight(0.5);
+
+    canvas.point(x1,y1);
+    if(x>canvas.centerW){
+      return true;
+    }
+    x+=this.steps;
+    this.fastPlot(x);
+  }
+
+  this.plott=function(){
+
+    console.log(this.formula);
+    //this.setFormula(formu);
+    this.x=0;
+    canvas.clearCanvas();
+    canvas.strokeWeight(3);
+    canvas.fill(color);
+    canvas.stroke(color);
+    console.log("formula: "+this.formula);
+      this.Draw = function(){
+        //console.log("x = " + this.x+ "; y = " + funct(this.formula,this.x));
+
+        canvas.point(canvas.centerW+(this.x*this.scale),canvas.centerH+funct(this.formula, this.x)*this.scale);
+        canvas.point(canvas.centerW-(this.x*this.scale),canvas.centerH+funct(this.formula, -this.x)*this.scale);
+        this.x+=this.steps;
+      };
+  };
+
+  this.plottConic=function(){
+
+    this.x=0;
+    canvas.clearCanvas();
+    canvas.strokeWeight(3);
+    canvas.fill(color);
+    canvas.stroke(color);
+
+      Draw = function(){
+
+        canvas.point(canvas.centerW+(this.x*this.scale),canvas.centerH+funct(this.formula,this.x)*this.scale);
+        canvas.point(canvas.centerW-(this.x*this.scale),canvas.centerH+funct(this.formula,-this.x)*this.scale);
+        canvas.point(canvas.centerW+(this.x*this.scale),canvas.centerH+funct(this.formula,this.x)*this.scale*(-1));
+        canvas.point(canvas.centerW-(this.x*this.scale),canvas.centerH+funct(this.formula,-this.x)*this.scale*(-1));
+        this.x+=this.steps;
+      };
+  };
+
+  //setFormula(form);
+  this.anim();
+
+};
