@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9abdd7ce.chunk.css",
+    "main.js": "/static/js/main.bc7228da.chunk.js",
+    "main.js.map": "/static/js/main.bc7228da.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.d921312d.chunk.js": "/static/js/2.d921312d.chunk.js",
+    "static/js/2.d921312d.chunk.js.map": "/static/js/2.d921312d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8636848297988a7a270e0d1a05130d8b.js": "/precache-manifest.8636848297988a7a270e0d1a05130d8b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9abdd7ce.chunk.css.map": "/static/css/main.9abdd7ce.chunk.css.map",
+    "static/media/encoding.svg": "/static/media/encoding.d74c3c2d.svg",
+    "static/media/font-mfizz.css": "/static/media/font-mfizz.64c7cf6c.woff",
+    "static/media/logofinal.png": "/static/media/logofinal.1b7af7f9.png",
+    "static/media/now-ui-kit.scss": "/static/media/nucleo-outline.8ebec31f.woff2",
+    "static/media/scenic-view.jpg": "/static/media/scenic-view.6ff604e5.jpg"
+  }
+}
